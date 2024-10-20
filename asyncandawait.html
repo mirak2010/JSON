@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Async and await in JS</title>
+    <h1>Async and await in JS</h1>
+</head>
+<body>
+    <P id="demo"></P>
+    <script>
+        async function add (a,b){
+            let response = await a+b;
+            display(response);
+        }
+        function display(some){
+            document.getElementById("demo").innerHTML=some;        
+        }
+        add(4,25)
+    </script>
+</body>
+</html>
